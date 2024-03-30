@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="files-to-store\dummy-audio.mp3" />
+    <None Remove="files-to-store\dummy-document.pdf" />
+    <None Remove="files-to-store\dummy-image.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="files-to-store\dummy-audio.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files-to-store\dummy-document.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files-to-store\dummy-image.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FileDB.Core\FileDB.Core.csproj" />
+  </ItemGroup>
+
+</Project>
