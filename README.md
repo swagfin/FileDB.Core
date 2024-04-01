@@ -2,7 +2,11 @@
 
 FileDB is a free, fast, lightweight C# (v3.5) DLL project to store, retrieve and delete files using a single archive file as a container on disk. It's ideal for storing files (all kind, all sizes) without databases and keeping them organized on a single disk file.
 
-### Forked from [mbdavid/FileDB](https://github.com/mbdavid/FileDB).
+### Forked from [mbdavid/FileDB](https://github.com/mbdavid/FileDB)
+
+## What's Different
+Support for .net Core with Minor updates and refactoring
+
 
 Let's see how to use FileDB with static helper methods.
 

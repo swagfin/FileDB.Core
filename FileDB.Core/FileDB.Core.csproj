@@ -2,6 +2,35 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>FileDB.Core</Title>
+    <Version>2.0.1</Version>
+    <Description>FileDB is a free, fast, lightweight C# (v3.5) DLL project to store, retrieve and delete files using a single archive file as a container on disk.</Description>
+    <PackageProjectUrl>https://github.com/swagfin/FileDb.Core</PackageProjectUrl>
+    <PackageIcon>filedb_200h.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/swagfin/FileDb.Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Compression;Storage;Files;Database</PackageTags>
+    <PackageReleaseNotes>Support for .net Core</PackageReleaseNotes>
+    <AssemblyVersion>2.0.1</AssemblyVersion>
+    <FileVersion>2.0.1</FileVersion>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <Authors>mbdavid,swagfin</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Icons\filedb_200h.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
