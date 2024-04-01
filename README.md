@@ -7,6 +7,10 @@ FileDB is a free, fast, lightweight C# (v3.5) DLL project to store, retrieve and
 ## What's Different
 Support for .net Core with Minor updates and refactoring
 
+*[NuGet Package](https://www.nuget.org/packages/FileDB.Core/)*
+```
+nuget Install-Package FileDB.Core
+```
 
 Let's see how to use FileDB with static helper methods.
 
