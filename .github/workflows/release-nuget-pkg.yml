@@ -1,0 +1,22 @@
+name: Release FileDB.Core to NuGet
+on:
+  release:
+    types: [published]
+    
+jobs:
+  publish_nuget_package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v1
+    - name: Build
+      run: dotnet build FileDB.Core/FileDB.Core.csproj -c Release
+    - name: Test
+      run: dotnet test FileDB.Core/FileDB.Core.csproj -c Release --no-build
+    - name: Pack nugets
+      run: dotnet pack FileDB.Core/FileDB.Core.csproj -c Release --no-build --output .
+    - name: Push to NuGet
+      run: dotnet nuget push "*.nupkg" --api-key ${{secrets.NUGET_API_KEY}} --source https://api.nuget.org/v3/index.json
